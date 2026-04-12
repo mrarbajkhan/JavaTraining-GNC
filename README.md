@@ -145,4 +145,40 @@ Through this training, I learned how to:
 
 ---
 
-👨‍💻 Created by Arbaj Khan
+## ▶️ How to Run the Programs
+
+Follow these steps to run the Java programs using VS Code:
+
+### 🔹 Using Terminal
+1. Open the project folder in VS Code
+2. Open Terminal (Terminal → New Terminal)
+3. Navigate to the program folder:
+   cd "folder-name"
+
+4. Compile the Java file:
+   javac FileName.java
+
+5. Run the program:
+   java FileName
+
+---
+
+### 🔹 Using VS Code (Shortcut Method)
+1. Open the Java file
+2. Right-click inside the file
+3. Click on "Run Java"
+
+---
+
+### ⚠️ Note
+- Make sure Java is installed on your system
+- If folder names contain spaces, use quotes (" ")
+- Always run the class that contains the main() method
+
+Example:
+cd "Assignment 01/Result Processing System"
+javac StudentResult.java (File and class name as same.)
+java StudentResult
+
+
+👨‍💻 Created by Arbaj Khan.
