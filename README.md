@@ -1,6 +1,6 @@
 # ☕ Java Training Programs
 
-This repository contains my Java training practice programs (Core Java). 
+This repository contains my Java training practice programs (Core Java).
 All programs are organized day-wise and cover basic to intermediate concepts.
 
 ---
@@ -46,7 +46,67 @@ All programs are organized day-wise and cover basic to intermediate concepts.
 * Polymorphism
 * Serilization
 * Serilization to Deserilization
-* Java Database Connectivity (JDBC)
+
+---
+
+## 📅 Day 5 Programs
+
+* JDBC Database Connectivity (Java ↔ MySQL Connection)
+* InsertData (Insert records into database using PreparedStatement)
+* ReadData (Fetch and display data using SELECT query and ResultSet)
+* UpdateData (Update existing records using UPDATE query with WHERE condition)
+* DeleteData (Delete records safely using DELETE query)
+* CRUDMenu (Menu-driven program to perform all CRUD operations)
+
+---
+
+### ⚙️ Features (Day 5)
+
+* Connected Java application with MySQL database using JDBC
+* Performed all CRUD operations:
+
+  * Create (Insert)
+  * Read (Select)
+  * Update
+  * Delete
+* Used PreparedStatement for secure queries
+* Implemented menu-driven system for user interaction
+* Displayed data in structured format
+* Handled exceptions using try-catch
+
+---
+
+### 🧠 Concepts Used (Day 5)
+
+* JDBC (Java Database Connectivity)
+* DriverManager & Connection
+* Statement vs PreparedStatement
+* ResultSet handling
+* executeQuery() vs executeUpdate()
+* SQL Queries (INSERT, SELECT, UPDATE, DELETE)
+* Exception Handling
+* User Input using Scanner
+
+---
+
+### 🗄️ Database Details
+
+* Database Name: `studentdb`
+* Table Name: `students`
+* Columns:
+
+  * `id` (INT)
+  * `student_name` (VARCHAR)
+  * `marks` (INT)
+
+---
+
+### ▶️ How to Run (Day 5 Programs)
+
+```
+javac -cp ".;mysql-connector-j-9.6.0.jar" CRUDMenu.java
+java -cp ".;mysql-connector-j-9.6.0.jar" CRUDMenu
+```
 
 ---
 
@@ -140,6 +200,7 @@ JavaTraining/
 ├── Second-day/
 ├── Three-day/
 ├── Four-day/
+├── Fifth-day/
 ├── Assignment-01/
 └── README.md
 
@@ -153,6 +214,8 @@ Through this training, I learned how to:
 * Apply core programming concepts in real problems
 * Use data structures like HashMap
 * Handle user input and exceptions
+* Work with databases using JDBC
+* Perform CRUD operations
 * Manage and upload projects using GitHub
 
 ---
@@ -162,8 +225,11 @@ Through this training, I learned how to:
 Follow these steps to run the Java programs using VS Code:
 
 ### 🔹 Using Terminal
+
 1. Open the project folder in VS Code
+
 2. Open Terminal (Terminal → New Terminal)
+
 3. Navigate to the program folder:
    cd "folder-name"
 
@@ -176,6 +242,7 @@ Follow these steps to run the Java programs using VS Code:
 ---
 
 ### 🔹 Using VS Code (Shortcut Method)
+
 1. Open the Java file
 2. Right-click inside the file
 3. Click on "Run Java"
@@ -183,14 +250,16 @@ Follow these steps to run the Java programs using VS Code:
 ---
 
 ### ⚠️ Note
-- Make sure Java is installed on your system
-- If folder names contain spaces, use quotes (" ")
-- Always run the class that contains the main() method
+
+* Make sure Java is installed on your system
+* If folder names contain spaces, use quotes (" ")
+* Always run the class that contains the main() method
 
 Example:
 cd "Assignment 01/Result Processing System"
 javac StudentResult.java (File and class name as same.)
 java StudentResult
 
+---
 
 ## 👨‍💻 Created by Arbaj Khan.
