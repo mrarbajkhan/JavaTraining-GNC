@@ -36,7 +36,7 @@ All programs are organized day-wise and cover basic to intermediate concepts.
 * Abstraction (Used abstract class and abstract methods.)
 * ClassObject (Created classes and objects to understand real-world.)
 * CustomException (Created user-defined exceptions to handle specific error conditions.)
-* ExceptionHandling (Used try-catch and final blocks to handle runtime errors.)
+* ExceptionHandling (Used try-catch and finally blocks to handle runtime errors.)
 
 ---
 
@@ -44,35 +44,30 @@ All programs are organized day-wise and cover basic to intermediate concepts.
 
 * File Create
 * Polymorphism
-* Serilization
-* Serilization to Deserilization
+* Serialization
+* Serialization to Deserialization
 
 ---
 
 ## 📅 Day 5 Programs
 
 * JDBC Database Connectivity (Java ↔ MySQL Connection)
-* InsertData (Insert records into database using PreparedStatement)
-* ReadData (Fetch and display data using SELECT query and ResultSet)
-* UpdateData (Update existing records using UPDATE query with WHERE condition)
-* DeleteData (Delete records safely using DELETE query)
-* CRUDMenu (Menu-driven program to perform all CRUD operations)
+* InsertData (Insert records using PreparedStatement)
+* ReadData (Fetch data using SELECT query and ResultSet)
+* UpdateData (Update records using UPDATE query)
+* DeleteData (Delete records using DELETE query)
+* CRUDMenu (Menu-driven CRUD operations program)
 
 ---
 
 ### ⚙️ Features (Day 5)
 
 * Connected Java application with MySQL database using JDBC
-* Performed all CRUD operations:
-
-  * Create (Insert)
-  * Read (Select)
-  * Update
-  * Delete
+* Performed all CRUD operations
 * Used PreparedStatement for secure queries
-* Implemented menu-driven system for user interaction
-* Displayed data in structured format
-* Handled exceptions using try-catch
+* Implemented menu-driven system
+* Displayed structured output
+* Handled exceptions
 
 ---
 
@@ -85,7 +80,7 @@ All programs are organized day-wise and cover basic to intermediate concepts.
 * executeQuery() vs executeUpdate()
 * SQL Queries (INSERT, SELECT, UPDATE, DELETE)
 * Exception Handling
-* User Input using Scanner
+* Scanner (User Input)
 
 ---
 
@@ -93,11 +88,12 @@ All programs are organized day-wise and cover basic to intermediate concepts.
 
 * Database Name: `studentdb`
 * Table Name: `students`
-* Columns:
 
-  * `id` (INT)
-  * `student_name` (VARCHAR)
-  * `marks` (INT)
+Columns:
+
+* id (INT)
+* student_name (VARCHAR)
+* marks (INT)
 
 ---
 
@@ -114,47 +110,32 @@ java -cp ".;mysql-connector-j-9.6.0.jar" CRUDMenu
 
 ### 📌 Description
 
-This program is designed to process student results using Java.
-It takes student names and marks as input, validates the data, and displays results (Pass/Fail) in a structured format.
+This program processes student results using Java.
+It takes input, validates marks, and displays Pass/Fail results.
 
 ---
 
 ### ⚙️ Features
 
-* Accepts input for multiple students (maximum 5)
-* Validates marks (must be between 0 and 100)
-* Uses conditional logic to determine Pass/Fail
-* Displays output in a clean tabular format
-* Handles invalid input using exception handling
+* Accepts up to 5 students
+* Validates marks (0–100)
+* Displays results in table format
+* Uses exception handling
 
 ---
 
 ### 🛠️ Concepts Used
 
-* **HashMap** → to store student name and marks (key-value pair)
-* **Scanner Class** → for user input
-* **Conditional Statements (if-else)** → for result calculation
-* **Loops (for loop)** → to handle multiple students
-* **Exception Handling (try-catch)** → to handle invalid input
-* **Encapsulation (basic usage)** → structured coding approach
+* HashMap
+* Scanner
+* Conditional Statements
+* Loops
+* Exception Handling
+* Basic Encapsulation
 
 ---
 
-### 📊 How It Works
-
-1. User enters number of students (max 5)
-2. Program takes name and marks as input
-3. Marks are validated (0–100)
-4. Data is stored in a HashMap
-5. Program checks:
-
-   * Marks ≥ 40 → Pass
-   * Marks < 40 → Fail
-6. Final results are displayed in table format
-
----
-
-### 💻 Sample Output
+### 📊 Sample Output
 
 ```
 Student Results:
@@ -168,20 +149,122 @@ Ali         30      Fail
 
 ---
 
+## 🎓 Final Assignment: Smart Campus Management System
+
+### 📌 Description
+
+This project is a **console-based Smart Campus Management System** developed using Java and MySQL.
+It allows users to manage students, courses, and enrollments efficiently with database integration.
+
+---
+
+### 🚀 Features
+
+* Add Student
+* Add Course
+* Enroll Student
+* View Students
+* View Enrollments
+* MySQL Integration using JDBC
+* Multithreading (Enrollment Processing)
+* File Handling
+
+---
+
+### 🛠️ Technologies Used
+
+* Core Java
+* JDBC
+* MySQL
+* Multithreading
+* File Handling
+
+---
+
+### 🧠 Concepts Used
+
+* OOP (Classes & Objects)
+* Exception Handling
+* JDBC Connectivity
+* PreparedStatement
+* SQL Queries (INSERT, SELECT, JOIN)
+* Multithreading
+* Collections (HashMap, ArrayList)
+* File Handling
+
+---
+
+### 🗃️ Database Details
+
+Database: `smartcampus`
+
+Tables:
+
+**students**
+
+* student_id (INT, PRIMARY KEY)
+* name (VARCHAR)
+* email (VARCHAR)
+
+**courses**
+
+* course_id (INT, PRIMARY KEY)
+* course_name (VARCHAR)
+* fee (DOUBLE)
+
+**enrollments**
+
+* student_id (INT)
+* course_id (INT)
+
+---
+
+### ⚙️ How to Run
+
+```
+javac -cp ".;mysql-connector-j-8.0.33.jar" SmartCampusSystem.java
+java -cp ".;mysql-connector-j-8.0.33.jar" SmartCampusSystem
+```
+
+---
+
+### 📊 Sample Output
+
+```
+--- Smart Campus Management ---
+1. Add Student
+2. Add Course
+3. Enroll Student
+4. View Students
+5. View Enrollments
+6. Exit
+```
+
+---
+
+### 📸 Screenshots
+
+(Add screenshots here)
+
+* Menu Screen
+* Add Student
+* View Students
+* Enrollment Output
+
+---
+
 ## 🚀 Concepts Covered
 
-* Java Basics (Syntax, Variables, Data Types)
-* User Input using Scanner
-* Conditional Statements (if-else)
-* Loops (for, while)
-* Methods (Functions)
+* Java Basics
+* User Input
+* Loops & Conditions
 
-### 🔹 OOP Concepts:
+### 🔹 OOP Concepts
 
 * Encapsulation
-* Getter & Setter
 * Inheritance
-* Data Masking (Security Concept)
+* Polymorphism
+* Abstraction
 
 ---
 
@@ -189,6 +272,7 @@ Ali         30      Fail
 
 * Java
 * VS Code
+* MySQL
 * Git & GitHub
 
 ---
@@ -202,64 +286,19 @@ JavaTraining/
 ├── Four-day/
 ├── Fifth-day/
 ├── Assignment-01/
+├── Assignment-02/
 └── README.md
 
 ---
 
 ## 💡 Learning Outcome
 
-Through this training, I learned how to:
-
-* Write clean and structured Java programs
-* Apply core programming concepts in real problems
-* Use data structures like HashMap
-* Handle user input and exceptions
-* Work with databases using JDBC
-* Perform CRUD operations
-* Manage and upload projects using GitHub
+* Strong understanding of Core Java
+* Experience with JDBC & MySQL
+* Ability to build real-world projects
+* Improved problem-solving skills
+* Hands-on GitHub usage
 
 ---
 
-## ▶️ How to Run the Programs
-
-Follow these steps to run the Java programs using VS Code:
-
-### 🔹 Using Terminal
-
-1. Open the project folder in VS Code
-
-2. Open Terminal (Terminal → New Terminal)
-
-3. Navigate to the program folder:
-   cd "folder-name"
-
-4. Compile the Java file:
-   javac FileName.java
-
-5. Run the program:
-   java FileName
-
----
-
-### 🔹 Using VS Code (Shortcut Method)
-
-1. Open the Java file
-2. Right-click inside the file
-3. Click on "Run Java"
-
----
-
-### ⚠️ Note
-
-* Make sure Java is installed on your system
-* If folder names contain spaces, use quotes (" ")
-* Always run the class that contains the main() method
-
-Example:
-cd "Assignment 01/Result Processing System"
-javac StudentResult.java (File and class name as same.)
-java StudentResult
-
----
-
-## 👨‍💻 Created by Arbaj Khan.
+## 👨‍💻 Created by Arbaj Khan
